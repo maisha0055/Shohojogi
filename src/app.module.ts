@@ -8,6 +8,7 @@ import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { WorkersModule } from './workers/workers.module';
 import { ServicesModule } from './services/services.module';
+import { JobAlertsModule } from './job-alerts/job-alerts.module';
 
 @Module({
   imports: [
@@ -16,7 +17,7 @@ import { ServicesModule } from './services/services.module';
       isGlobal: true,
       envFilePath: '.env',
     }),
-    
+
     // Database
     TypeOrmModule.forRoot({
       type: 'postgres',
@@ -29,12 +30,13 @@ import { ServicesModule } from './services/services.module';
       synchronize: true, // Set to false in production
       logging: true,
     }),
-    
+
     // Feature Modules
     AuthModule,
     UsersModule,
     WorkersModule,
     ServicesModule,
+    JobAlertsModule,
   ],
 })
 export class AppModule {}
