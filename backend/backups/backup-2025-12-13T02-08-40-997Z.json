@@ -1,0 +1,775 @@
+{
+  "timestamp": "2025-12-13T02:08:41.104Z",
+  "database": "worker_service_db",
+  "tables": {
+    "blog_posts": {
+      "rowCount": 3,
+      "columns": [
+        "id",
+        "title_en",
+        "title_bn",
+        "content_en",
+        "content_bn",
+        "author_id",
+        "category",
+        "featured_image",
+        "is_published",
+        "views",
+        "created_at",
+        "updated_at"
+      ],
+      "data": [
+        {
+          "id": "96546fdf-9a90-4dfc-b72a-0555bf168883",
+          "title_en": "Top 10 Home Maintenance Tips",
+          "title_bn": "শীর্ষ ১০ বাড়ি রক্ষণাবেক্ষণ টিপস",
+          "content_en": "Regular home maintenance is essential to keep your property in good condition. Here are our top 10 tips: 1. Check your roof regularly, 2. Clean gutters seasonally, 3. Service your HVAC system, 4. Inspect plumbing for leaks...",
+          "content_bn": "নিয়মিত বাড়ি রক্ষণাবেক্ষণ আপনার সম্পত্তি ভাল অবস্থায় রাখতে অপরিহার্য। এখানে আমাদের শীর্ষ ১০ টিপস রয়েছে...",
+          "author_id": null,
+          "category": "Home Maintenance",
+          "featured_image": null,
+          "is_published": true,
+          "views": 0,
+          "created_at": "2025-12-13T01:54:41.462Z",
+          "updated_at": "2025-12-13T01:54:41.462Z"
+        },
+        {
+          "id": "dfdd667b-73cb-403b-824e-bc63eb02b54d",
+          "title_en": "How to Choose the Right Worker",
+          "title_bn": "সঠিক কর্মী কীভাবে নির্বাচন করবেন",
+          "content_en": "Choosing the right worker for your job is crucial. Look for verified profiles, check ratings and reviews, compare prices, and always communicate clearly about your requirements...",
+          "content_bn": "আপনার কাজের জন্য সঠিক কর্মী নির্বাচন করা অত্যন্ত গুরুত্বপূর্ণ। যাচাইকৃত প্রোফাইল খুঁজুন, রেটিং এবং পর্যালোচনা পরীক্ষা করুন...",
+          "author_id": null,
+          "category": "Tips & Guides",
+          "featured_image": null,
+          "is_published": true,
+          "views": 0,
+          "created_at": "2025-12-13T01:54:41.462Z",
+          "updated_at": "2025-12-13T01:54:41.462Z"
+        },
+        {
+          "id": "09d1a34e-6dab-4140-a3e2-8853b9d8fb94",
+          "title_en": "Safety Tips for Hiring Home Service Workers",
+          "title_bn": "বাড়ির সেবা কর্মী নিয়োগের জন্য নিরাপত্তা টিপস",
+          "content_en": "Your safety is paramount. Always verify worker identity, check reviews, meet in public places if possible, and use the in-app chat for communication...",
+          "content_bn": "আপনার নিরাপত্তা সর্বোপরি। সর্বদা কর্মীর পরিচয় যাচাই করুন, পর্যালোচনা পরীক্ষা করুন...",
+          "author_id": null,
+          "category": "Safety",
+          "featured_image": null,
+          "is_published": true,
+          "views": 0,
+          "created_at": "2025-12-13T01:54:41.462Z",
+          "updated_at": "2025-12-13T01:54:41.462Z"
+        }
+      ]
+    },
+    "bookings": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "booking_number",
+        "user_id",
+        "worker_id",
+        "service_category_id",
+        "booking_type",
+        "status",
+        "service_description",
+        "service_location",
+        "location_latitude",
+        "location_longitude",
+        "scheduled_date",
+        "scheduled_time",
+        "estimated_price",
+        "final_price",
+        "payment_method",
+        "payment_status",
+        "payment_transaction_id",
+        "distance_km",
+        "completed_at",
+        "created_at",
+        "updated_at"
+      ],
+      "data": []
+    },
+    "chat_messages": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "senderId",
+        "receiverId",
+        "message",
+        "isRead",
+        "createdAt"
+      ],
+      "data": []
+    },
+    "favorites": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "user_id",
+        "worker_id",
+        "created_at"
+      ],
+      "data": []
+    },
+    "fraud_detection_logs": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "user_id",
+        "detection_type",
+        "severity",
+        "details",
+        "is_resolved",
+        "created_at"
+      ],
+      "data": []
+    },
+    "loyalty_points_history": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "user_id",
+        "booking_id",
+        "points_earned",
+        "points_used",
+        "description",
+        "created_at"
+      ],
+      "data": []
+    },
+    "messages": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "booking_id",
+        "sender_id",
+        "receiver_id",
+        "message_text",
+        "is_read",
+        "created_at"
+      ],
+      "data": []
+    },
+    "notifications": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "user_id",
+        "title",
+        "message",
+        "type",
+        "reference_id",
+        "is_read",
+        "created_at"
+      ],
+      "data": []
+    },
+    "reports": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "reporter_id",
+        "reported_user_id",
+        "booking_id",
+        "review_id",
+        "reason",
+        "description",
+        "status",
+        "admin_notes",
+        "created_at",
+        "resolved_at"
+      ],
+      "data": []
+    },
+    "reviews": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "booking_id",
+        "user_id",
+        "worker_id",
+        "rating",
+        "comment",
+        "is_reported",
+        "is_fake",
+        "created_at"
+      ],
+      "data": []
+    },
+    "service_categories": {
+      "rowCount": 30,
+      "columns": [
+        "id",
+        "name_en",
+        "name_bn",
+        "description_en",
+        "description_bn",
+        "icon_url",
+        "is_active",
+        "created_at"
+      ],
+      "data": [
+        {
+          "id": "41ad47cc-9c1c-4321-aa49-71c2c13e28c6",
+          "name_en": "Carpenter",
+          "name_bn": "কাঠমিস্ত্রি",
+          "description_en": "Furniture repair, wood work, door and window fixing",
+          "description_bn": "আসবাবপত্র মেরামত, কাঠের কাজ, দরজা এবং জানালা ঠিক করা",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936886.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:48:45.937Z"
+        },
+        {
+          "id": "9f9a0fb1-3d75-4a7c-a735-c36db8453820",
+          "name_en": "Electrician",
+          "name_bn": "ইলেকট্রিশিয়ান",
+          "description_en": "Electrical wiring, fixture installation, repair work",
+          "description_bn": "বৈদ্যুতিক তারের কাজ, ফিক্সচার ইনস্টলেশন, মেরামতের কাজ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936756.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:48:45.937Z"
+        },
+        {
+          "id": "d136f424-26ee-428b-8cab-89c4b56c8c28",
+          "name_en": "Plumber",
+          "name_bn": "প্লাম্বার",
+          "description_en": "Pipe fixing, drainage system, water supply issues",
+          "description_bn": "পাইপ ঠিক করা, নিকাশী ব্যবস্থা, পানি সরবরাহ সমস্যা",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936730.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:48:45.937Z"
+        },
+        {
+          "id": "5af90250-d3d5-4961-9e7c-fcb0cf65b7d8",
+          "name_en": "Mechanic",
+          "name_bn": "মেকানিক",
+          "description_en": "Vehicle repair, bike and car servicing",
+          "description_bn": "যানবাহন মেরামত, বাইক এবং গাড়ি সার্ভিসিং",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936675.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:48:45.937Z"
+        },
+        {
+          "id": "4d958485-2adb-43c7-88c8-b375b93ff8ba",
+          "name_en": "Painter",
+          "name_bn": "চিত্রশিল্পী",
+          "description_en": "House painting, wall decoration, color consultation",
+          "description_bn": "ঘর রঙ করা, দেয়াল সাজসজ্জা, রঙের পরামর্শ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936682.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:48:45.937Z"
+        },
+        {
+          "id": "59405ec9-323f-4b26-8f6d-3123168fff30",
+          "name_en": "AC Technician",
+          "name_bn": "এসি টেকনিশিয়ান",
+          "description_en": "Air conditioner installation, repair, and maintenance",
+          "description_bn": "এয়ার কন্ডিশনার ইনস্টলেশন, মেরামত এবং রক্ষণাবেক্ষণ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936876.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:48:45.937Z"
+        },
+        {
+          "id": "23b147e0-162c-4b8d-8c3d-304b5755d940",
+          "name_en": "Cleaning Service",
+          "name_bn": "পরিষ্কার সেবা",
+          "description_en": "Home cleaning, office cleaning, deep cleaning",
+          "description_bn": "বাড়ি পরিষ্কার, অফিস পরিষ্কার, গভীর পরিষ্কার",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936749.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:48:45.937Z"
+        },
+        {
+          "id": "fe21d486-b8af-4a8b-81db-01bac4807d35",
+          "name_en": "Key Maker",
+          "name_bn": "চাবি প্রস্তুতকারক",
+          "description_en": "Key duplication, lock repair, emergency lockout service",
+          "description_bn": "চাবি নকল, তালা মেরামত, জরুরী লকআউট সেবা",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936798.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:48:45.937Z"
+        },
+        {
+          "id": "b2c8d6c3-1fde-4cdd-b4b0-08dec7859be5",
+          "name_en": "Gardener",
+          "name_bn": "মালী",
+          "description_en": "Garden maintenance, lawn care, plant care",
+          "description_bn": "বাগান রক্ষণাবেক্ষণ, লন যত্ন, উদ্ভিদ যত্ন",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936820.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:48:45.937Z"
+        },
+        {
+          "id": "04f85ea9-9a31-4e6f-95ba-7e46150a34e9",
+          "name_en": "Mason",
+          "name_bn": "রাজমিস্ত্রি",
+          "description_en": "Brick work, wall construction, tiling work",
+          "description_bn": "ইটের কাজ, দেয়াল নির্মাণ, টাইল করার কাজ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936864.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:48:45.937Z"
+        },
+        {
+          "id": "eac40dd0-cac0-4a54-ae47-d575208081e2",
+          "name_en": "Welder",
+          "name_bn": "ওয়েল্ডার",
+          "description_en": "Metal welding, gate repair, grill work",
+          "description_bn": "ধাতব ওয়েল্ডিং, গেট মেরামত, গ্রিলের কাজ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936722.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:48:45.937Z"
+        },
+        {
+          "id": "05fba5c4-20cf-4312-bab4-89c60585f01d",
+          "name_en": "CCTV Technician",
+          "name_bn": "সিসিটিভি টেকনিশিয়ান",
+          "description_en": "CCTV installation, security camera setup",
+          "description_bn": "সিসিটিভি ইনস্টলেশন, নিরাপত্তা ক্যামেরা সেটআপ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936808.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:48:45.937Z"
+        },
+        {
+          "id": "663dd430-edf6-4898-bac9-fd3605c9ef84",
+          "name_en": "Pest Control",
+          "name_bn": "কীটপতঙ্গ নিয়ন্ত্রণ",
+          "description_en": "Pest removal, fumigation, mosquito control",
+          "description_bn": "কীটপতঙ্গ অপসারণ, ধূমপান, মশা নিয়ন্ত্রণ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936844.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:48:45.937Z"
+        },
+        {
+          "id": "16ffea63-1451-479c-8df9-3ee22b7cdb03",
+          "name_en": "Appliance Repair",
+          "name_bn": "যন্ত্রপাতি মেরামত",
+          "description_en": "Refrigerator, washing machine, oven repair",
+          "description_bn": "রেফ্রিজারেটর, ওয়াশিং মেশিন, ওভেন মেরামত",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936790.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:48:45.937Z"
+        },
+        {
+          "id": "32320433-316a-4420-95c8-4b565426bd23",
+          "name_en": "Tailor",
+          "name_bn": "দরজি",
+          "description_en": "Clothes stitching, alteration, custom tailoring",
+          "description_bn": "পোশাক সেলাই, পরিবর্তন, কাস্টম টেইলারিং",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936714.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:48:45.937Z"
+        },
+        {
+          "id": "f2060462-f6d7-4aab-b1f6-1b75759e00b0",
+          "name_en": "Carpenter",
+          "name_bn": "কাঠমিস্ত্রি",
+          "description_en": "Furniture repair, wood work, door and window fixing",
+          "description_bn": "আসবাবপত্র মেরামত, কাঠের কাজ, দরজা এবং জানালা ঠিক করা",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936886.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:54:41.348Z"
+        },
+        {
+          "id": "815dd83f-80ef-4186-ad12-727c5618b5a0",
+          "name_en": "Electrician",
+          "name_bn": "ইলেকট্রিশিয়ান",
+          "description_en": "Electrical wiring, fixture installation, repair work",
+          "description_bn": "বৈদ্যুতিক তারের কাজ, ফিক্সচার ইনস্টলেশন, মেরামতের কাজ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936756.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:54:41.348Z"
+        },
+        {
+          "id": "7693ec5d-304e-42a7-a6c0-4be1fba0b912",
+          "name_en": "Plumber",
+          "name_bn": "প্লাম্বার",
+          "description_en": "Pipe fixing, drainage system, water supply issues",
+          "description_bn": "পাইপ ঠিক করা, নিকাশী ব্যবস্থা, পানি সরবরাহ সমস্যা",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936730.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:54:41.348Z"
+        },
+        {
+          "id": "94fc2ac8-6c52-4752-b46d-68dfb454c0c2",
+          "name_en": "Mechanic",
+          "name_bn": "মেকানিক",
+          "description_en": "Vehicle repair, bike and car servicing",
+          "description_bn": "যানবাহন মেরামত, বাইক এবং গাড়ি সার্ভিসিং",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936675.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:54:41.348Z"
+        },
+        {
+          "id": "e2cab1a6-2ec6-49f2-8444-79e1aa8321ad",
+          "name_en": "Painter",
+          "name_bn": "চিত্রশিল্পী",
+          "description_en": "House painting, wall decoration, color consultation",
+          "description_bn": "ঘর রঙ করা, দেয়াল সাজসজ্জা, রঙের পরামর্শ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936682.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:54:41.348Z"
+        },
+        {
+          "id": "821ca098-a858-470c-a085-448837ab1041",
+          "name_en": "AC Technician",
+          "name_bn": "এসি টেকনিশিয়ান",
+          "description_en": "Air conditioner installation, repair, and maintenance",
+          "description_bn": "এয়ার কন্ডিশনার ইনস্টলেশন, মেরামত এবং রক্ষণাবেক্ষণ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936876.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:54:41.348Z"
+        },
+        {
+          "id": "b8f3e089-9a6d-45fe-8328-e241fb983d10",
+          "name_en": "Cleaning Service",
+          "name_bn": "পরিষ্কার সেবা",
+          "description_en": "Home cleaning, office cleaning, deep cleaning",
+          "description_bn": "বাড়ি পরিষ্কার, অফিস পরিষ্কার, গভীর পরিষ্কার",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936749.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:54:41.348Z"
+        },
+        {
+          "id": "0b3774d8-4a54-44bb-949d-6a8b62f2d2fa",
+          "name_en": "Key Maker",
+          "name_bn": "চাবি প্রস্তুতকারক",
+          "description_en": "Key duplication, lock repair, emergency lockout service",
+          "description_bn": "চাবি নকল, তালা মেরামত, জরুরী লকআউট সেবা",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936798.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:54:41.348Z"
+        },
+        {
+          "id": "efd44e1d-126d-4896-b5ab-c2d9161f0f35",
+          "name_en": "Gardener",
+          "name_bn": "মালী",
+          "description_en": "Garden maintenance, lawn care, plant care",
+          "description_bn": "বাগান রক্ষণাবেক্ষণ, লন যত্ন, উদ্ভিদ যত্ন",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936820.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:54:41.348Z"
+        },
+        {
+          "id": "b02b260d-6d20-431c-a10c-0bbbc90b02b3",
+          "name_en": "Mason",
+          "name_bn": "রাজমিস্ত্রি",
+          "description_en": "Brick work, wall construction, tiling work",
+          "description_bn": "ইটের কাজ, দেয়াল নির্মাণ, টাইল করার কাজ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936864.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:54:41.348Z"
+        },
+        {
+          "id": "b7f3698c-6a35-4bc6-b588-7512cfb03ff7",
+          "name_en": "Welder",
+          "name_bn": "ওয়েল্ডার",
+          "description_en": "Metal welding, gate repair, grill work",
+          "description_bn": "ধাতব ওয়েল্ডিং, গেট মেরামত, গ্রিলের কাজ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936722.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:54:41.348Z"
+        },
+        {
+          "id": "cb7014fa-b737-42af-9c13-74f24a7b3913",
+          "name_en": "CCTV Technician",
+          "name_bn": "সিসিটিভি টেকনিশিয়ান",
+          "description_en": "CCTV installation, security camera setup",
+          "description_bn": "সিসিটিভি ইনস্টলেশন, নিরাপত্তা ক্যামেরা সেটআপ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936808.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:54:41.348Z"
+        },
+        {
+          "id": "78d23e12-23b6-4740-bbfb-564347b87d6b",
+          "name_en": "Pest Control",
+          "name_bn": "কীটপতঙ্গ নিয়ন্ত্রণ",
+          "description_en": "Pest removal, fumigation, mosquito control",
+          "description_bn": "কীটপতঙ্গ অপসারণ, ধূমপান, মশা নিয়ন্ত্রণ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936844.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:54:41.348Z"
+        },
+        {
+          "id": "0496cdf2-c261-4c6e-897a-1d7654daf212",
+          "name_en": "Appliance Repair",
+          "name_bn": "যন্ত্রপাতি মেরামত",
+          "description_en": "Refrigerator, washing machine, oven repair",
+          "description_bn": "রেফ্রিজারেটর, ওয়াশিং মেশিন, ওভেন মেরামত",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936790.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:54:41.348Z"
+        },
+        {
+          "id": "f4b5614d-0d76-4096-bdbe-7290546ce7dc",
+          "name_en": "Tailor",
+          "name_bn": "দরজি",
+          "description_en": "Clothes stitching, alteration, custom tailoring",
+          "description_bn": "পোশাক সেলাই, পরিবর্তন, কাস্টম টেইলারিং",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936714.png",
+          "is_active": true,
+          "created_at": "2025-12-13T01:54:41.348Z"
+        }
+      ]
+    },
+    "services": {
+      "rowCount": 8,
+      "columns": [
+        "id",
+        "name",
+        "description",
+        "icon",
+        "isActive",
+        "createdAt",
+        "updatedAt"
+      ],
+      "data": [
+        {
+          "id": "0b3b79bb-d1f4-4748-bd6c-c84ff942f40a",
+          "name": "Carpenter",
+          "description": "Furniture repair, wooden work, door/window installation",
+          "icon": null,
+          "isActive": true,
+          "createdAt": "2025-12-11T01:30:14.148Z",
+          "updatedAt": "2025-12-11T01:30:14.148Z"
+        },
+        {
+          "id": "a4ed65e3-f2f0-4553-8830-3949806cb900",
+          "name": "Electrician",
+          "description": "Electrical repairs, wiring, appliance installation",
+          "icon": null,
+          "isActive": true,
+          "createdAt": "2025-12-11T01:30:14.159Z",
+          "updatedAt": "2025-12-11T01:30:14.159Z"
+        },
+        {
+          "id": "d1acd4e0-88f8-4672-8ed0-974969aba7e6",
+          "name": "Plumber",
+          "description": "Pipe repairs, bathroom/kitchen fixtures, water system",
+          "icon": null,
+          "isActive": true,
+          "createdAt": "2025-12-11T01:30:14.164Z",
+          "updatedAt": "2025-12-11T01:30:14.164Z"
+        },
+        {
+          "id": "a67ecb7d-9b67-4cdf-b430-715b0cba5646",
+          "name": "Mechanic",
+          "description": "Vehicle repairs, maintenance, diagnostics",
+          "icon": null,
+          "isActive": true,
+          "createdAt": "2025-12-11T01:30:14.169Z",
+          "updatedAt": "2025-12-11T01:30:14.169Z"
+        },
+        {
+          "id": "700ba792-3f73-4d8b-9618-5fbf75e2284a",
+          "name": "Key Maker",
+          "description": "Key duplication, lock repair, security systems",
+          "icon": null,
+          "isActive": true,
+          "createdAt": "2025-12-11T01:30:14.175Z",
+          "updatedAt": "2025-12-11T01:30:14.175Z"
+        },
+        {
+          "id": "314d5997-17ad-4017-94b7-4c59f3bdb06a",
+          "name": "Painter",
+          "description": "Interior/exterior painting, wall finishing",
+          "icon": null,
+          "isActive": true,
+          "createdAt": "2025-12-11T01:30:14.182Z",
+          "updatedAt": "2025-12-11T01:30:14.182Z"
+        },
+        {
+          "id": "841259be-dfbe-4b40-88e2-27753f9e2b7a",
+          "name": "AC Technician",
+          "description": "AC installation, repair, maintenance",
+          "icon": null,
+          "isActive": true,
+          "createdAt": "2025-12-11T01:30:14.187Z",
+          "updatedAt": "2025-12-11T01:30:14.187Z"
+        },
+        {
+          "id": "57f83ec2-adc2-4d48-b7eb-5ec2c172e84b",
+          "name": "Gardener",
+          "description": "Lawn care, plant maintenance, landscaping",
+          "icon": null,
+          "isActive": true,
+          "createdAt": "2025-12-11T01:30:14.193Z",
+          "updatedAt": "2025-12-11T01:30:14.193Z"
+        }
+      ]
+    },
+    "users": {
+      "rowCount": 7,
+      "columns": [
+        "id",
+        "email",
+        "password",
+        "name",
+        "phone",
+        "profilePhoto",
+        "address",
+        "role",
+        "isActive",
+        "createdAt",
+        "updatedAt"
+      ],
+      "data": [
+        {
+          "id": "39ffa0a6-423f-4c91-8b4c-d15933d4dd87",
+          "email": "test+cli@example.com",
+          "password": "$2b$10$wQTNFINqgNAAmBAsbWNI5uFf5fImWLH6W15dm9ZqXsptASqcmmiXC",
+          "name": "CLI Test",
+          "phone": "01700000000",
+          "profilePhoto": null,
+          "address": null,
+          "role": "user",
+          "isActive": true,
+          "createdAt": "2025-12-11T01:18:53.343Z",
+          "updatedAt": "2025-12-11T01:18:53.343Z"
+        },
+        {
+          "id": "1f81b3ee-2928-4906-adb9-cb7427cb205e",
+          "email": "adad@gmail.com",
+          "password": "$2b$10$a64kIfE0jhIWPdcNFukP.e7iaAAZ6kDVpcCZAmwnsI49wsruVIcvO",
+          "name": "Md. Raisul Islam",
+          "phone": "01782172375",
+          "profilePhoto": null,
+          "address": null,
+          "role": "user",
+          "isActive": true,
+          "createdAt": "2025-12-11T01:22:21.054Z",
+          "updatedAt": "2025-12-11T01:22:21.054Z"
+        },
+        {
+          "id": "8ee24712-1035-489d-bccf-1f7a253da37a",
+          "email": "mifhaque11@gmail.com",
+          "password": "$2b$10$B11xtJAvK63cFNzPhDiLUePWF6dQ9bL58d2Su0/F9.nLkRCKtb1vy",
+          "name": "Miftah Haque",
+          "phone": "01782172375",
+          "profilePhoto": null,
+          "address": null,
+          "role": "user",
+          "isActive": true,
+          "createdAt": "2025-12-11T01:23:23.195Z",
+          "updatedAt": "2025-12-11T01:23:23.195Z"
+        },
+        {
+          "id": "74025956-f842-461d-abb3-b00280677edc",
+          "email": "awda@gmail.com",
+          "password": "$2b$10$s27a4Coe9GVzqnUeb5BI2erIjFBNRJDnKO8SzBQgd7RE7Ptmu65iC",
+          "name": "awdadwa",
+          "phone": "01782172376",
+          "profilePhoto": null,
+          "address": null,
+          "role": "worker",
+          "isActive": true,
+          "createdAt": "2025-12-11T01:26:57.922Z",
+          "updatedAt": "2025-12-11T01:26:57.922Z"
+        },
+        {
+          "id": "8e6e5187-88a7-42ee-8318-aee138b38687",
+          "email": "student@bracu.ac.bd",
+          "password": "$2b$10$zG4L3oyp3UFe8h0oKJvldu7LMgXCwFVccNoZraIoqCertfXmPDr5m",
+          "name": "Test User",
+          "phone": null,
+          "profilePhoto": "http://localhost:1315/uploads/profile-photos/1765463233557-165085252.jpg",
+          "address": null,
+          "role": "user",
+          "isActive": true,
+          "createdAt": "2025-12-11T13:46:55.044Z",
+          "updatedAt": "2025-12-11T14:27:13.614Z"
+        },
+        {
+          "id": "7617d333-2191-4822-8432-02580a9a95fb",
+          "email": "md.raisul.islam3@g.bracu.ac.bd",
+          "password": "$2b$10$0oq46fth66XR1y9yhI13U.bKrhSVa23lOWUJSqa8m7f/ZfrKIDqWC",
+          "name": "Md. Raisul Islam",
+          "phone": "01782172375",
+          "profilePhoto": "http://localhost:3000/uploads/profile-photos/1765547426815-83616570.jpg",
+          "address": "dawdawd",
+          "role": "user",
+          "isActive": true,
+          "createdAt": "2025-12-11T10:10:12.288Z",
+          "updatedAt": "2025-12-12T13:50:26.825Z"
+        },
+        {
+          "id": "f79b7425-ea90-42eb-b861-ecffe9ab4578",
+          "email": "devtest@example.com",
+          "password": "$2b$10$BRBRWZ/w.1/H5dJbV27Tn.lh8Tp2Px6FNAZt6URaIH8Ah4ipy5ajO",
+          "name": "Dev Test",
+          "phone": "+8801999999999",
+          "profilePhoto": null,
+          "address": null,
+          "role": "user",
+          "isActive": true,
+          "createdAt": "2025-12-13T01:50:45.523Z",
+          "updatedAt": "2025-12-13T01:50:45.523Z"
+        }
+      ]
+    },
+    "worker_profiles": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "user_id",
+        "service_category_id",
+        "experience_years",
+        "hourly_rate",
+        "bio",
+        "skills",
+        "availability_status",
+        "verification_status",
+        "nid_number",
+        "nid_image_url",
+        "extracted_nid_data",
+        "average_rating",
+        "total_reviews",
+        "total_jobs_completed",
+        "is_featured",
+        "created_at",
+        "updated_at"
+      ],
+      "data": []
+    },
+    "workers": {
+      "rowCount": 1,
+      "columns": [
+        "id",
+        "userId",
+        "skills",
+        "latitude",
+        "longitude",
+        "location",
+        "rating",
+        "totalReviews",
+        "isAvailable",
+        "bio",
+        "hourlyRate",
+        "createdAt",
+        "updatedAt"
+      ],
+      "data": [
+        {
+          "id": "2a74bd06-74ec-42c7-9dcb-185ae2f7d0d1",
+          "userId": "8e6e5187-88a7-42ee-8318-aee138b38687",
+          "skills": [
+            "plumbing",
+            "electrical",
+            "carpentry"
+          ],
+          "latitude": null,
+          "longitude": null,
+          "location": null,
+          "rating": "0.00",
+          "totalReviews": 0,
+          "isAvailable": true,
+          "bio": null,
+          "hourlyRate": null,
+          "createdAt": "2025-12-11T16:34:56.025Z",
+          "updatedAt": "2025-12-11T16:34:56.025Z"
+        }
+      ]
+    }
+  }
+}

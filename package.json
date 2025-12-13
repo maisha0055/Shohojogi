@@ -1,0 +1,47 @@
+{
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.4.2",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/jwt": "^11.0.2",
+    "@nestjs/passport": "^11.0.5",
+    "@nestjs/platform-socket.io": "^11.1.9",
+    "@nestjs/typeorm": "^11.0.0",
+    "@nestjs/websockets": "^11.1.9",
+    "bcrypt": "^6.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.3",
+    "firebase-admin": "^13.6.0",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "pg": "^8.16.3",
+    "socket.io": "^4.8.1",
+    "typeorm": "^0.3.28"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/node": "^24.10.1",
+    "@types/passport-jwt": "^4.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "name": "maisha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend:dev": "cd backend/backend && npm run dev",
+    "backend:start": "cd backend/backend && npm start",
+    "frontend:start": "cd worker-calling-frontend/worker-calling-frontend && npm start",
+    "db:backup": "cd backend/backend && npm run db:backup",
+    "db:init": "cd backend/backend && npm run db:init",
+    "db:migrate": "cd backend/backend && npm run db:migrate",
+    "db:seed": "cd backend/backend && npm run db:seed",
+    "db:seed:workers": "cd backend/backend && npm run db:seed:workers",
+    "db:seed:bookings": "cd backend/backend && npm run db:seed:bookings",
+    "db:verify": "cd backend/backend && npm run db:verify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

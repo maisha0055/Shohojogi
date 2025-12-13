@@ -1,0 +1,582 @@
+{
+  "timestamp": "2025-12-13T02:22:24.766Z",
+  "database": "worker_service_db",
+  "tables": {
+    "blog_posts": {
+      "rowCount": 3,
+      "columns": [
+        "id",
+        "title_en",
+        "title_bn",
+        "content_en",
+        "content_bn",
+        "author_id",
+        "category",
+        "featured_image",
+        "is_published",
+        "views",
+        "created_at",
+        "updated_at"
+      ],
+      "data": [
+        {
+          "id": "ebfc8ffa-2154-4730-b515-6829943e5420",
+          "title_en": "Top 10 Home Maintenance Tips",
+          "title_bn": "শীর্ষ ১০ বাড়ি রক্ষণাবেক্ষণ টিপস",
+          "content_en": "Regular home maintenance is essential to keep your property in good condition. Here are our top 10 tips: 1. Check your roof regularly, 2. Clean gutters seasonally, 3. Service your HVAC system, 4. Inspect plumbing for leaks...",
+          "content_bn": "নিয়মিত বাড়ি রক্ষণাবেক্ষণ আপনার সম্পত্তি ভাল অবস্থায় রাখতে অপরিহার্য। এখানে আমাদের শীর্ষ ১০ টিপস রয়েছে...",
+          "author_id": null,
+          "category": "Home Maintenance",
+          "featured_image": null,
+          "is_published": true,
+          "views": 0,
+          "created_at": "2025-12-13T02:14:09.777Z",
+          "updated_at": "2025-12-13T02:14:09.777Z"
+        },
+        {
+          "id": "0f460b95-5cb6-47b5-86f6-1bc3de33c491",
+          "title_en": "How to Choose the Right Worker",
+          "title_bn": "সঠিক কর্মী কীভাবে নির্বাচন করবেন",
+          "content_en": "Choosing the right worker for your job is crucial. Look for verified profiles, check ratings and reviews, compare prices, and always communicate clearly about your requirements...",
+          "content_bn": "আপনার কাজের জন্য সঠিক কর্মী নির্বাচন করা অত্যন্ত গুরুত্বপূর্ণ। যাচাইকৃত প্রোফাইল খুঁজুন, রেটিং এবং পর্যালোচনা পরীক্ষা করুন...",
+          "author_id": null,
+          "category": "Tips & Guides",
+          "featured_image": null,
+          "is_published": true,
+          "views": 0,
+          "created_at": "2025-12-13T02:14:09.777Z",
+          "updated_at": "2025-12-13T02:14:09.777Z"
+        },
+        {
+          "id": "118375ee-113a-47ae-ba8c-45e782b58902",
+          "title_en": "Safety Tips for Hiring Home Service Workers",
+          "title_bn": "বাড়ির সেবা কর্মী নিয়োগের জন্য নিরাপত্তা টিপস",
+          "content_en": "Your safety is paramount. Always verify worker identity, check reviews, meet in public places if possible, and use the in-app chat for communication...",
+          "content_bn": "আপনার নিরাপত্তা সর্বোপরি। সর্বদা কর্মীর পরিচয় যাচাই করুন, পর্যালোচনা পরীক্ষা করুন...",
+          "author_id": null,
+          "category": "Safety",
+          "featured_image": null,
+          "is_published": true,
+          "views": 0,
+          "created_at": "2025-12-13T02:14:09.777Z",
+          "updated_at": "2025-12-13T02:14:09.777Z"
+        }
+      ]
+    },
+    "bookings": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "booking_number",
+        "user_id",
+        "worker_id",
+        "service_category_id",
+        "booking_type",
+        "status",
+        "service_description",
+        "service_location",
+        "location_latitude",
+        "location_longitude",
+        "scheduled_date",
+        "scheduled_time",
+        "estimated_price",
+        "final_price",
+        "payment_method",
+        "payment_status",
+        "payment_transaction_id",
+        "distance_km",
+        "completed_at",
+        "created_at",
+        "updated_at"
+      ],
+      "data": []
+    },
+    "favorites": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "user_id",
+        "worker_id",
+        "created_at"
+      ],
+      "data": []
+    },
+    "fraud_detection_logs": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "user_id",
+        "detection_type",
+        "severity",
+        "details",
+        "is_resolved",
+        "created_at"
+      ],
+      "data": []
+    },
+    "loyalty_points_history": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "user_id",
+        "booking_id",
+        "points_earned",
+        "points_used",
+        "description",
+        "created_at"
+      ],
+      "data": []
+    },
+    "messages": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "booking_id",
+        "sender_id",
+        "receiver_id",
+        "message_text",
+        "is_read",
+        "created_at"
+      ],
+      "data": []
+    },
+    "notifications": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "user_id",
+        "title",
+        "message",
+        "type",
+        "reference_id",
+        "is_read",
+        "created_at"
+      ],
+      "data": []
+    },
+    "reports": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "reporter_id",
+        "reported_user_id",
+        "booking_id",
+        "review_id",
+        "reason",
+        "description",
+        "status",
+        "admin_notes",
+        "created_at",
+        "resolved_at"
+      ],
+      "data": []
+    },
+    "reviews": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "booking_id",
+        "user_id",
+        "worker_id",
+        "rating",
+        "comment",
+        "is_reported",
+        "is_fake",
+        "created_at"
+      ],
+      "data": []
+    },
+    "service_categories": {
+      "rowCount": 15,
+      "columns": [
+        "id",
+        "name_en",
+        "name_bn",
+        "description_en",
+        "description_bn",
+        "icon_url",
+        "is_active",
+        "created_at"
+      ],
+      "data": [
+        {
+          "id": "f63640d2-66ed-45fb-abdf-f2aa88efcd19",
+          "name_en": "Carpenter",
+          "name_bn": "কাঠমিস্ত্রি",
+          "description_en": "Furniture repair, wood work, door and window fixing",
+          "description_bn": "আসবাবপত্র মেরামত, কাঠের কাজ, দরজা এবং জানালা ঠিক করা",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936886.png",
+          "is_active": true,
+          "created_at": "2025-12-13T02:14:09.742Z"
+        },
+        {
+          "id": "9a9d4056-ef3a-43f1-989c-5dd15284b357",
+          "name_en": "Electrician",
+          "name_bn": "ইলেকট্রিশিয়ান",
+          "description_en": "Electrical wiring, fixture installation, repair work",
+          "description_bn": "বৈদ্যুতিক তারের কাজ, ফিক্সচার ইনস্টলেশন, মেরামতের কাজ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936756.png",
+          "is_active": true,
+          "created_at": "2025-12-13T02:14:09.742Z"
+        },
+        {
+          "id": "957363b9-82b7-4927-a015-7073933ad43f",
+          "name_en": "Plumber",
+          "name_bn": "প্লাম্বার",
+          "description_en": "Pipe fixing, drainage system, water supply issues",
+          "description_bn": "পাইপ ঠিক করা, নিকাশী ব্যবস্থা, পানি সরবরাহ সমস্যা",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936730.png",
+          "is_active": true,
+          "created_at": "2025-12-13T02:14:09.742Z"
+        },
+        {
+          "id": "27a4dd45-6bc4-4842-99c3-49499ff420e0",
+          "name_en": "Mechanic",
+          "name_bn": "মেকানিক",
+          "description_en": "Vehicle repair, bike and car servicing",
+          "description_bn": "যানবাহন মেরামত, বাইক এবং গাড়ি সার্ভিসিং",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936675.png",
+          "is_active": true,
+          "created_at": "2025-12-13T02:14:09.742Z"
+        },
+        {
+          "id": "e2871681-f6e7-454a-acdb-33058ab5f22c",
+          "name_en": "Painter",
+          "name_bn": "চিত্রশিল্পী",
+          "description_en": "House painting, wall decoration, color consultation",
+          "description_bn": "ঘর রঙ করা, দেয়াল সাজসজ্জা, রঙের পরামর্শ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936682.png",
+          "is_active": true,
+          "created_at": "2025-12-13T02:14:09.742Z"
+        },
+        {
+          "id": "e7b83ea4-e508-434d-a21e-5c33f30911ea",
+          "name_en": "AC Technician",
+          "name_bn": "এসি টেকনিশিয়ান",
+          "description_en": "Air conditioner installation, repair, and maintenance",
+          "description_bn": "এয়ার কন্ডিশনার ইনস্টলেশন, মেরামত এবং রক্ষণাবেক্ষণ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936876.png",
+          "is_active": true,
+          "created_at": "2025-12-13T02:14:09.742Z"
+        },
+        {
+          "id": "6ba34fd9-86e3-40f1-8b4b-99472b07f136",
+          "name_en": "Cleaning Service",
+          "name_bn": "পরিষ্কার সেবা",
+          "description_en": "Home cleaning, office cleaning, deep cleaning",
+          "description_bn": "বাড়ি পরিষ্কার, অফিস পরিষ্কার, গভীর পরিষ্কার",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936749.png",
+          "is_active": true,
+          "created_at": "2025-12-13T02:14:09.742Z"
+        },
+        {
+          "id": "f79b6e93-fd79-4256-9a58-1996a98ed80b",
+          "name_en": "Key Maker",
+          "name_bn": "চাবি প্রস্তুতকারক",
+          "description_en": "Key duplication, lock repair, emergency lockout service",
+          "description_bn": "চাবি নকল, তালা মেরামত, জরুরী লকআউট সেবা",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936798.png",
+          "is_active": true,
+          "created_at": "2025-12-13T02:14:09.742Z"
+        },
+        {
+          "id": "e8608ca4-1ce3-4bae-ab0c-87b36a5675eb",
+          "name_en": "Gardener",
+          "name_bn": "মালী",
+          "description_en": "Garden maintenance, lawn care, plant care",
+          "description_bn": "বাগান রক্ষণাবেক্ষণ, লন যত্ন, উদ্ভিদ যত্ন",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936820.png",
+          "is_active": true,
+          "created_at": "2025-12-13T02:14:09.742Z"
+        },
+        {
+          "id": "d3458b15-ca27-4f8d-ad66-a737bd066f87",
+          "name_en": "Mason",
+          "name_bn": "রাজমিস্ত্রি",
+          "description_en": "Brick work, wall construction, tiling work",
+          "description_bn": "ইটের কাজ, দেয়াল নির্মাণ, টাইল করার কাজ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936864.png",
+          "is_active": true,
+          "created_at": "2025-12-13T02:14:09.742Z"
+        },
+        {
+          "id": "51ad69a9-a925-4f4b-a950-236252ec5f77",
+          "name_en": "Welder",
+          "name_bn": "ওয়েল্ডার",
+          "description_en": "Metal welding, gate repair, grill work",
+          "description_bn": "ধাতব ওয়েল্ডিং, গেট মেরামত, গ্রিলের কাজ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936722.png",
+          "is_active": true,
+          "created_at": "2025-12-13T02:14:09.742Z"
+        },
+        {
+          "id": "d2057b4a-5aa4-42c3-bfce-c53b25ebd41b",
+          "name_en": "CCTV Technician",
+          "name_bn": "সিসিটিভি টেকনিশিয়ান",
+          "description_en": "CCTV installation, security camera setup",
+          "description_bn": "সিসিটিভি ইনস্টলেশন, নিরাপত্তা ক্যামেরা সেটআপ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936808.png",
+          "is_active": true,
+          "created_at": "2025-12-13T02:14:09.742Z"
+        },
+        {
+          "id": "da48d472-0b98-45b5-b375-5961a6bbf1fa",
+          "name_en": "Pest Control",
+          "name_bn": "কীটপতঙ্গ নিয়ন্ত্রণ",
+          "description_en": "Pest removal, fumigation, mosquito control",
+          "description_bn": "কীটপতঙ্গ অপসারণ, ধূমপান, মশা নিয়ন্ত্রণ",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936844.png",
+          "is_active": true,
+          "created_at": "2025-12-13T02:14:09.742Z"
+        },
+        {
+          "id": "0b369462-24a0-45f6-ab99-c81127acd089",
+          "name_en": "Appliance Repair",
+          "name_bn": "যন্ত্রপাতি মেরামত",
+          "description_en": "Refrigerator, washing machine, oven repair",
+          "description_bn": "রেফ্রিজারেটর, ওয়াশিং মেশিন, ওভেন মেরামত",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936790.png",
+          "is_active": true,
+          "created_at": "2025-12-13T02:14:09.742Z"
+        },
+        {
+          "id": "9518deeb-6548-428b-b770-f8da2a4c2093",
+          "name_en": "Tailor",
+          "name_bn": "দরজি",
+          "description_en": "Clothes stitching, alteration, custom tailoring",
+          "description_bn": "পোশাক সেলাই, পরিবর্তন, কাস্টম টেইলারিং",
+          "icon_url": "https://cdn-icons-png.flaticon.com/512/2936/2936714.png",
+          "is_active": true,
+          "created_at": "2025-12-13T02:14:09.742Z"
+        }
+      ]
+    },
+    "users": {
+      "rowCount": 10,
+      "columns": [
+        "id",
+        "email",
+        "password",
+        "full_name",
+        "phone",
+        "role",
+        "profile_photo",
+        "address",
+        "latitude",
+        "longitude",
+        "preferred_language",
+        "is_verified",
+        "is_active",
+        "loyalty_points",
+        "created_at",
+        "updated_at"
+      ],
+      "data": [
+        {
+          "id": "c2a5c574-09b2-4967-97ce-127c39f59615",
+          "email": "admin@workercalling.com",
+          "password": "$2b$10$YourHashedPasswordHere",
+          "full_name": "System Administrator",
+          "phone": "+8801700000000",
+          "role": "admin",
+          "profile_photo": null,
+          "address": null,
+          "latitude": null,
+          "longitude": null,
+          "preferred_language": "en",
+          "is_verified": true,
+          "is_active": true,
+          "loyalty_points": 0,
+          "created_at": "2025-12-13T02:14:09.761Z",
+          "updated_at": "2025-12-13T02:14:09.761Z"
+        },
+        {
+          "id": "91823b37-9ee5-438f-a684-db45d3009720",
+          "email": "john.doe@example.com",
+          "password": "$2b$10$YourHashedPasswordHere",
+          "full_name": "John Doe",
+          "phone": "+8801711111111",
+          "role": "user",
+          "profile_photo": null,
+          "address": "Dhanmondi, Dhaka",
+          "latitude": "23.74610000",
+          "longitude": "90.37420000",
+          "preferred_language": "en",
+          "is_verified": false,
+          "is_active": true,
+          "loyalty_points": 0,
+          "created_at": "2025-12-13T02:14:09.765Z",
+          "updated_at": "2025-12-13T02:14:09.765Z"
+        },
+        {
+          "id": "46b6148a-a001-4e92-b162-9fbe10716f07",
+          "email": "রহিম@example.com",
+          "password": "$2b$10$YourHashedPasswordHere",
+          "full_name": "আব্দুর রহিম",
+          "phone": "+8801722222222",
+          "role": "user",
+          "profile_photo": null,
+          "address": "মিরপুর, ঢাকা",
+          "latitude": "23.82230000",
+          "longitude": "90.36540000",
+          "preferred_language": "bn",
+          "is_verified": false,
+          "is_active": true,
+          "loyalty_points": 0,
+          "created_at": "2025-12-13T02:14:09.765Z",
+          "updated_at": "2025-12-13T02:14:09.765Z"
+        },
+        {
+          "id": "646e1377-4594-4ea8-b0f7-b6b13545f320",
+          "email": "sara.ahmed@example.com",
+          "password": "$2b$10$YourHashedPasswordHere",
+          "full_name": "Sara Ahmed",
+          "phone": "+8801733333333",
+          "role": "user",
+          "profile_photo": null,
+          "address": "Gulshan, Dhaka",
+          "latitude": "23.78080000",
+          "longitude": "90.41260000",
+          "preferred_language": "en",
+          "is_verified": false,
+          "is_active": true,
+          "loyalty_points": 0,
+          "created_at": "2025-12-13T02:14:09.765Z",
+          "updated_at": "2025-12-13T02:14:09.765Z"
+        },
+        {
+          "id": "48ef573f-f4ff-4a2d-bc3f-ea76a1205435",
+          "email": "karim.carpenter@example.com",
+          "password": "$2b$10$YourHashedPasswordHere",
+          "full_name": "Karim Hossain",
+          "phone": "+8801744444444",
+          "role": "worker",
+          "profile_photo": null,
+          "address": "Mirpur 10, Dhaka",
+          "latitude": "23.80700000",
+          "longitude": "90.36880000",
+          "preferred_language": "en",
+          "is_verified": true,
+          "is_active": true,
+          "loyalty_points": 0,
+          "created_at": "2025-12-13T02:14:09.771Z",
+          "updated_at": "2025-12-13T02:14:09.771Z"
+        },
+        {
+          "id": "7afdd427-3f3f-405b-892a-64b416b0846f",
+          "email": "electrician.rahim@example.com",
+          "password": "$2b$10$YourHashedPasswordHere",
+          "full_name": "Rahim Uddin",
+          "phone": "+8801755555555",
+          "role": "worker",
+          "profile_photo": null,
+          "address": "Dhanmondi 27, Dhaka",
+          "latitude": "23.74630000",
+          "longitude": "90.37860000",
+          "preferred_language": "en",
+          "is_verified": true,
+          "is_active": true,
+          "loyalty_points": 0,
+          "created_at": "2025-12-13T02:14:09.771Z",
+          "updated_at": "2025-12-13T02:14:09.771Z"
+        },
+        {
+          "id": "8b98cf30-bd50-40b9-bd62-78c45ae86cd8",
+          "email": "plumber.hasan@example.com",
+          "password": "$2b$10$YourHashedPasswordHere",
+          "full_name": "Hasan Ali",
+          "phone": "+8801766666666",
+          "role": "worker",
+          "profile_photo": null,
+          "address": "Banani, Dhaka",
+          "latitude": "23.79370000",
+          "longitude": "90.40660000",
+          "preferred_language": "en",
+          "is_verified": true,
+          "is_active": true,
+          "loyalty_points": 0,
+          "created_at": "2025-12-13T02:14:09.771Z",
+          "updated_at": "2025-12-13T02:14:09.771Z"
+        },
+        {
+          "id": "2bdb0301-695d-4162-bfef-066a884a024c",
+          "email": "mechanic.aslam@example.com",
+          "password": "$2b$10$YourHashedPasswordHere",
+          "full_name": "Aslam Sheikh",
+          "phone": "+8801777777777",
+          "role": "worker",
+          "profile_photo": null,
+          "address": "Mohammadpur, Dhaka",
+          "latitude": "23.76780000",
+          "longitude": "90.35950000",
+          "preferred_language": "en",
+          "is_verified": true,
+          "is_active": true,
+          "loyalty_points": 0,
+          "created_at": "2025-12-13T02:14:09.771Z",
+          "updated_at": "2025-12-13T02:14:09.771Z"
+        },
+        {
+          "id": "a03a4029-fbbf-4e4f-b13f-07857325edf3",
+          "email": "painter.jobayer@example.com",
+          "password": "$2b$10$YourHashedPasswordHere",
+          "full_name": "Jobayer Islam",
+          "phone": "+8801788888888",
+          "role": "worker",
+          "profile_photo": null,
+          "address": "Uttara, Dhaka",
+          "latitude": "23.87590000",
+          "longitude": "90.37950000",
+          "preferred_language": "en",
+          "is_verified": true,
+          "is_active": true,
+          "loyalty_points": 0,
+          "created_at": "2025-12-13T02:14:09.771Z",
+          "updated_at": "2025-12-13T02:14:09.771Z"
+        },
+        {
+          "id": "76d69e79-74f2-45b9-a494-391922888d59",
+          "email": "md.raisul.islam3@g.bracu.ac.bd",
+          "password": "$2b$10$sT8KEVMJtcMQuQfM1nXizeA6vufnpBL4FMBp2RziGsgp0Ewjq4lEa",
+          "full_name": "Md. Raisul Islam",
+          "phone": "01782172375",
+          "role": "user",
+          "profile_photo": null,
+          "address": "adawdawd",
+          "latitude": null,
+          "longitude": null,
+          "preferred_language": "en",
+          "is_verified": false,
+          "is_active": true,
+          "loyalty_points": 0,
+          "created_at": "2025-12-13T02:19:34.360Z",
+          "updated_at": "2025-12-13T02:19:34.360Z"
+        }
+      ]
+    },
+    "worker_profiles": {
+      "rowCount": 0,
+      "columns": [
+        "id",
+        "user_id",
+        "service_category_id",
+        "experience_years",
+        "hourly_rate",
+        "bio",
+        "skills",
+        "availability_status",
+        "verification_status",
+        "nid_number",
+        "nid_image_url",
+        "extracted_nid_data",
+        "average_rating",
+        "total_reviews",
+        "total_jobs_completed",
+        "is_featured",
+        "created_at",
+        "updated_at"
+      ],
+      "data": []
+    }
+  }
+}
