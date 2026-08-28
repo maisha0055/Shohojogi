@@ -1,4 +1,4 @@
-# 🏗️ Shohojogi - Local Service Worker Platform
+# 🏗️ Shohojogi - Local Service Worker Platform 
 
 > **A full-stack platform connecting users with trusted local workers. Providing reliable service listings, seamless interactions, and modern workflow efficiency for Bangladesh.**
 
